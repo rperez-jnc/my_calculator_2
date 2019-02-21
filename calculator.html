@@ -11,6 +11,9 @@ function square() {
 }
 function inverse() {
    var num = document.getElementById("n1");
+   if (num.value==0)
+        throw new Error("Can\'t take inverse of Zero");
+   else
    num.value = 1/num.value;
 }
 function four() {
